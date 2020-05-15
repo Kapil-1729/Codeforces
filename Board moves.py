@@ -1,9 +1,7 @@
 def solve():
     n=int(input())
     k=n//2
-    result=k*(k+1)*((2*k)+1)
-    result=result/6
-    result=result*8
+    result=((k*(k+1)*((2*k)+1))/6)*8
     print(int(result))
 
 t=int(input())
