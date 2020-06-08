@@ -1,0 +1,13 @@
+def solve():
+    n=int(input())
+    a=list(map(int,input().split()))
+    b=list(map(int,input().split()))
+    if sorted(a)==a:
+        return "Yes"
+    if b.count(0)>0 and b.count(1)>0:
+        return "Yes"
+    return "No"
+
+t=int(input())
+for loop in range(t):
+    print(solve())
